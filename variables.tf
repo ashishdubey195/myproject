@@ -2,7 +2,7 @@ variable "aws_region" {
   description = "AWS region"
   default = "us-east-1"
 }
-variable "aws_type" {
+variable "instance_type" {
   description = "AWS ec2 type"
   default = "t3.micro"
 }
