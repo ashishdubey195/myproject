@@ -6,7 +6,7 @@ variable "instance_type" {
   description = "AWS ec2 type"
   default = "t3.micro"
 }
-variable "aws_ami" {
+variable "ami" {
   describtion = " AWS ami"
   default = "ami-0a232144cf20a27a5"
 }
