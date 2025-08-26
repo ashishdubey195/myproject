@@ -9,8 +9,32 @@ terraform {
 
  provider "aws" {
    region = var.aws_ami
-   }
- mod  
+}
+
+ module "nexus_instance" {
+   source = "./ec2_instance"
+   ami = var.ami
+   instance_type = var.instance_type
+   instance_name = "nexus"
+}
+
+module "sonar_instance" {
+  source = "./ec2-instance"
+  ami = var.ami
+  instance_type = var.instance_type
+  instance_name = "sonar"
+}
+
+module "test" {
+  source = "./ec2-instance"
+  ami = var.ami
+  instance_type = var.aws_type
+  instance_name = "test"
+}
+   
+
+
+
 
   
   
