@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 variable "instance_type" {
   description = "AWS ec2 type"
-  default = "t3.micro"
+  default = "t2.medium"
 }
 variable "ami" {
   description = " AWS ami"
