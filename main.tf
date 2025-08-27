@@ -28,7 +28,7 @@ module "sonar_instance" {
 module "test" {
   source = "./ec2_instance"
   ami = var.ami
-  instance_type = var.aws_type
+  instance_type = var.instance_type
   instance_name = "test"
 }
    
