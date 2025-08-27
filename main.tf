@@ -19,14 +19,14 @@ terraform {
 }
 
 module "sonar_instance" {
-  source = "./ec2-instance"
+  source = "./ec2_instance"
   ami = var.ami
   instance_type = var.instance_type
   instance_name = "sonar"
 }
 
 module "test" {
-  source = "./ec2-instance"
+  source = "./ec2_instance"
   ami = var.ami
   instance_type = var.aws_type
   instance_name = "test"
